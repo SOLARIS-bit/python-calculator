@@ -3,6 +3,7 @@ def add(*args):
     print("Executing improved add function...")
     return sum(args)
 
+
 def subtract(*args):
     """Subtract an unlimited number of numbers."""
     if not args:
@@ -12,12 +13,14 @@ def subtract(*args):
         result -= num
     return result
 
+
 def multiply(*args):
     """Multiply an unlimited number of numbers."""
     result = 1
     for num in args:
         result *= num
     return result
+
 
 def divide(*args):
     """Divide sequentially all provided numbers."""
@@ -28,4 +31,3 @@ def divide(*args):
         return result
     except ZeroDivisionError:
         return "Error: Division by zero"
-
